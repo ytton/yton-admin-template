@@ -1,16 +1,14 @@
 <template>
-  <button @click="increment">
-    {{ count }}
-  </button>
+  <a-button type="primary"> </a-button>
 </template>
 
 <script setup lang="ts">
-import { useMainStore } from '@/stores/main'
-const { count, updateCount } = useMainStore()
+// import { useGlobalStore } from '@/stores/globalal'
+// const { count, updateCount } = useGlobalStore()
 
-const increment = () => {
-  updateCount(count.value + 1)
-}
+// const increment = () => {
+//   updateCount(count.value + 1)
+// }
 </script>
 
 <style scoped lang="less"></style>

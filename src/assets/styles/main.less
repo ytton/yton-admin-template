@@ -1,1 +1,67 @@
 @test-color: red;
+//正文-常规
+@font-size-body-3: 14px;
+//正文-常规-小
+@font-size-body-2: 13px;
+//辅助文案/次要文案
+@font-size-body-1: 12px;
+//水印文本
+@font-size-caption: 12px;
+//标题-小
+@font-size-title-1: 16px;
+//标题-中
+@font-size-title-2: 20px;
+//标题-大
+@font-size-title-3: 24px;
+//运营标题-小
+@font-size-display-1: 36px;
+//运营标题-中
+@font-size-display-2: 48px;
+//运营标题-大
+@font-size-display-3: 56px;
+//特殊阴影
+@shadow-special: 0 0 1px rgba(0, 0, 0, 0.3);
+//阴影样式1
+@shadow1-center: 0 -2px 5px rgba(0, 0, 0, 0.1);
+//阴影样式2
+@shadow2-center: 0 0 10px rgba(0, 0, 0, 0.1);
+//阴影样式3
+@shadow3-center: 0 0 20px rgba(0, 0, 0, 0.1);
+//无边框
+@border-none: 0;
+//常规
+@border-1: 1px;
+//较粗
+@border-2: 2px;
+//粗
+@border-3: 3px;
+body {
+  color: var(--color-text-2);
+}
+
+.mr {
+  margin-right: auto;
+}
+.ml {
+  margin-left: auto;
+}
+
+.table-status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+  &.enable{
+    background-color:rgb(var(--green-6));
+  }
+  &.disable{
+    background-color: rgb(var(--red-6));
+  }
+}
+.chart{
+  min-height: 400px;
+}
+.clearfix::after {
+  clear: both;
+}
